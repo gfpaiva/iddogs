@@ -70,7 +70,9 @@
     "react-icons": "^3.7.0",
     "react-router": "^5.0.1",
     "react-router-dom": "^5.0.1",
+    "react-spinkit": "^3.0.0",
     "react-transition-group": "^4.2.1",
+    "react-visibility-sensor": "^5.1.0",
     "rfs": "^8.0.4"
   }
 }

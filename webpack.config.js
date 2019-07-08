@@ -34,6 +34,7 @@ module.exports = {
   output: {
     filename: 'app.js',
     path: path.resolve(__dirname, 'build'),
+    publicPath: '/',
   },
   devtool: isProduction ? false : 'source-map',
   devServer: {

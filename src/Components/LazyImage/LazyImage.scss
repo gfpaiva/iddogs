@@ -1,0 +1,13 @@
+@import '../../Scss/root';
+
+.lazy-image {
+  @include shadow();
+
+  &__image {
+    background-color: $gray;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 33.333vh;
+    width: 100%;
+  }
+}

@@ -1,0 +1,17 @@
+@import '../../Scss/root';
+
+.login {
+  &__button {
+    &-icon {
+      // @include rfs(30);
+      margin-left: .5em;
+      vertical-align: top;
+    }
+
+    &-loader {
+      min-height: 26px;
+      min-width: 115px;
+    }
+  }
+
+}

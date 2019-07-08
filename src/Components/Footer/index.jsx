@@ -5,8 +5,8 @@ export default function Footer() {
     <footer className="footer text-center">
       <p>
         Feito com
-        <span role="img" aria-label="Coração">❤️</span>
-        por:
+        <span role="img" aria-label="Coração">️ ❤️ </span>
+        por:&nbsp;
         <a
           className="linked"
           href="https://guilherme.dev/"

@@ -1,0 +1,43 @@
+@import '../../Scss/root';
+
+.styled-input {
+  border-bottom: 1px solid $gray;
+  display: block;
+  margin: 0 auto;
+  max-width: 350px;
+  position: relative;
+  width: 100%;
+
+  &:after,
+  &:before {
+    background-color: $secondary-color;
+    bottom: -1px;
+    content: '';
+    display: block;
+    height: 1px;
+    position: absolute;
+    transition: width .5s ease;
+    width: 0;
+  }
+
+  &:after { left: 50% }
+  &:before { right: 50% }
+
+  &--active {
+    &:after,
+    &:before { width: 50% }
+  }
+
+  &--error {
+    &:after,
+    &:before { background-color: $error-color }
+  }
+
+  input {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      padding: .5em 1em;
+      width: 100%;
+    }
+}

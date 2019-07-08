@@ -1,4 +1,9 @@
-import { Home, NotFound, Search } from '../Pages';
+import {
+  Home,
+  NotFound,
+  SignUp,
+  Feed,
+} from '../Pages';
 
 export const PublicRoutes = [
   {
@@ -9,31 +14,22 @@ export const PublicRoutes = [
   },
   {
     exact: true,
-    path: '/search',
-    component: Search,
-    key: 'search',
+    path: '/signup',
+    component: SignUp,
+    key: 'signup',
   },
   {
+    exact: true,
     component: NotFound,
-    key: 'notFound',
+    key: 'notfound',
   },
 ];
 
 export const PrivateRoutes = [
   {
     exact: true,
-    path: '/',
-    component: Home,
-    key: 'home',
-  },
-  {
-    exact: true,
-    path: '/search',
-    component: Search,
-    key: 'search',
-  },
-  {
-    component: NotFound,
-    key: 'notFound',
+    path: '/feed/:category',
+    component: Feed,
+    key: 'feed',
   },
 ];

@@ -4,12 +4,12 @@ import PropTypes from 'prop-types';
 import './Button.scss';
 
 export default function Button({
-  big, className, children, ...rest
+  small, className, children, ...rest
 }) {
   return (
     // eslint-disable-next-line react/button-has-type
     <button
-      className={`${big ? 'button--big ' : ''}${className ? `${className} ` : ''}button bg-primary color-secondary`}
+      className={`${small ? 'button--small ' : ''}${className ? `${className} ` : ''}button bg-secondary color-primary`}
       {...rest}
     >
       <span className="button__content">
@@ -20,7 +20,7 @@ export default function Button({
 }
 
 Button.defaultProps = {
-  big: false,
+  small: false,
   className: '',
 };
 
@@ -29,6 +29,6 @@ Button.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]).isRequired,
-  big: PropTypes.bool,
+  small: PropTypes.bool,
   className: PropTypes.string,
 };

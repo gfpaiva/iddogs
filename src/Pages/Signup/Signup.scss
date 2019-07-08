@@ -1,4 +1,8 @@
 @import '../../Scss/root';
 
 .signup {
+  &__icon {
+    @include rfs(150);
+    margin-bottom: 2rem;
+  }
 }

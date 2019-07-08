@@ -2,14 +2,14 @@ import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 import PropTypes from 'prop-types';
 
-export default function PrivateRoute({ Component, ...rest }) {
-  const auth = localStorage.getItem('auth');
+import { IsAutenticated } from '../../Utils/Auth';
 
+export default function PrivateRoute({ component: Component, ...rest }) {
   return (
     <Route
       {...rest}
       render={(props) => {
-        if (auth) return <Component {...props} />;
+        if (IsAutenticated()) return <Component {...props} />;
 
         return (
           <Redirect
@@ -25,8 +25,9 @@ export default function PrivateRoute({ Component, ...rest }) {
 }
 
 PrivateRoute.propTypes = {
-  Component: PropTypes.oneOfType([
+  component: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
+    PropTypes.any,
   ]).isRequired,
 };

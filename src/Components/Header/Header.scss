@@ -1,6 +1,19 @@
 @import '../../Scss/root';
 
 .header {
-	height: $header-height;
-	position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+
+  &--not-logged { justify-content: center }
+
+  &__logo {
+    font-weight: 300;
+    letter-spacing: .3em;
+  }
+
+  &__logout {
+    justify-self: flex-end
+  }
 }
