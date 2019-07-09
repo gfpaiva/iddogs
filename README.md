@@ -1,6 +1,6 @@
 # IDDogs #
 
-[![Build Status](https://travis-ci.org/gfpaiva/iddogs.svg?branch=master)](https://travis-ci.org/gfpaiva/iddogs) [![Coverage Status](https://coveralls.io/repos/github/gfpaiva/iddogs/badge.svg?branch=master)](https://coveralls.io/github/gfpaiva/iddogs?branch=master)
+[![Build Status](https://travis-ci.org/gfpaiva/iddogs.svg?branch=master)](https://travis-ci.org/gfpaiva/iddogs) [![Coverage Status](https://coveralls.io/repos/github/gfpaiva/iddogs/badge.svg?branch=master)](https://coveralls.io/github/gfpaiva/iddogs?branch=master) [![StackShare](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/gfpaiva/iddogs)
 
 [IDDogs](https://gfpaiva-iddogs.netlify.com/) Uma galeria com fotos de cachorros filtrados pelas raças: husky, labrador, hound e pug.
 
@@ -12,8 +12,8 @@
 ## 🏃🏽‍♂️ Rodar projeto local
 
 **Instalação**
-- `yarn`
 - `npm install` ou `npm i`
+- `yarn`
 
 `npm start` ou `npm start -- --no` e abra `http://localhost:3000/` no seu browser
 
@@ -45,6 +45,6 @@ Npm scripts:
 Hospedado no [netlify](https://www.netlify.com/).
 Deploy feito pela [CLI do netlify](https://www.netlify.com/docs/cli/) após os checks do TravisCI.
 
-## ⚖️ License
+## ⚖️ Licença
 
 Este projeto está licenciado sob a licença MIT - consulte o arquivo [LICENSE.md](LICENSE.md) para obter detalhes.
