@@ -1,0 +1,555 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Grid /> should mount properly 1`] = `
+<Grid
+  items={
+    Array [
+      "https://images.dog.ceo/breeds/labrador/n02099712_1150.jpg",
+      "https://images.dog.ceo/breeds/labrador/n02099712_1200.jpg",
+      "https://images.dog.ceo/breeds/labrador/n02099712_1229.jpg",
+      "https://images.dog.ceo/breeds/labrador/n02099712_1254.jpg",
+      "https://images.dog.ceo/breeds/labrador/n02099712_129.jpg",
+    ]
+  }
+>
+  <div
+    className="grid"
+  >
+    <withRouter(LazyImage)
+      id={0}
+      image="https://images.dog.ceo/breeds/labrador/n02099712_1150.jpg"
+      key="0"
+    >
+      <LazyImage
+        forceVisible={false}
+        history={
+          Object {
+            "action": "POP",
+            "block": [Function],
+            "createHref": [Function],
+            "go": [Function],
+            "goBack": [Function],
+            "goForward": [Function],
+            "length": 1,
+            "listen": [Function],
+            "location": Object {
+              "hash": "",
+              "pathname": "/",
+              "search": "",
+              "state": undefined,
+            },
+            "push": [Function],
+            "replace": [Function],
+          }
+        }
+        id={0}
+        image="https://images.dog.ceo/breeds/labrador/n02099712_1150.jpg"
+        location={
+          Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          }
+        }
+        match={
+          Object {
+            "isExact": true,
+            "params": Object {},
+            "path": "/",
+            "url": "/",
+          }
+        }
+      >
+        <div
+          className="lazy-image"
+        >
+          <VisibilitySensor
+            active={true}
+            containment={null}
+            delayedCall={false}
+            intervalCheck={true}
+            intervalDelay={100}
+            minTopValue={0}
+            offset={
+              Object {
+                "top": 100,
+              }
+            }
+            onChange={[Function]}
+            partialVisibility={true}
+            resizeCheck={false}
+            resizeDelay={250}
+            resizeThrottle={-1}
+            scrollCheck={false}
+            scrollDelay={250}
+            scrollThrottle={-1}
+          >
+            <CSSTransition
+              classNames={
+                Object {
+                  "enter": "animated fast",
+                  "enterActive": "fadeIn fast",
+                  "enterDone": "animated fadeIn fast",
+                }
+              }
+              in={false}
+              timeout={800}
+            >
+              <Transition
+                appear={false}
+                enter={true}
+                exit={true}
+                in={false}
+                mountOnEnter={false}
+                onEnter={[Function]}
+                onEntered={[Function]}
+                onEntering={[Function]}
+                onExit={[Function]}
+                onExited={[Function]}
+                onExiting={[Function]}
+                timeout={800}
+                unmountOnExit={false}
+              >
+                <div
+                  className="lazy-image__image"
+                  onClick={[Function]}
+                  style={Object {}}
+                />
+              </Transition>
+            </CSSTransition>
+          </VisibilitySensor>
+        </div>
+      </LazyImage>
+    </withRouter(LazyImage)>
+    <withRouter(LazyImage)
+      id={1}
+      image="https://images.dog.ceo/breeds/labrador/n02099712_1200.jpg"
+      key="1"
+    >
+      <LazyImage
+        forceVisible={false}
+        history={
+          Object {
+            "action": "POP",
+            "block": [Function],
+            "createHref": [Function],
+            "go": [Function],
+            "goBack": [Function],
+            "goForward": [Function],
+            "length": 1,
+            "listen": [Function],
+            "location": Object {
+              "hash": "",
+              "pathname": "/",
+              "search": "",
+              "state": undefined,
+            },
+            "push": [Function],
+            "replace": [Function],
+          }
+        }
+        id={1}
+        image="https://images.dog.ceo/breeds/labrador/n02099712_1200.jpg"
+        location={
+          Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          }
+        }
+        match={
+          Object {
+            "isExact": true,
+            "params": Object {},
+            "path": "/",
+            "url": "/",
+          }
+        }
+      >
+        <div
+          className="lazy-image"
+        >
+          <VisibilitySensor
+            active={true}
+            containment={null}
+            delayedCall={false}
+            intervalCheck={true}
+            intervalDelay={100}
+            minTopValue={0}
+            offset={
+              Object {
+                "top": 100,
+              }
+            }
+            onChange={[Function]}
+            partialVisibility={true}
+            resizeCheck={false}
+            resizeDelay={250}
+            resizeThrottle={-1}
+            scrollCheck={false}
+            scrollDelay={250}
+            scrollThrottle={-1}
+          >
+            <CSSTransition
+              classNames={
+                Object {
+                  "enter": "animated fast",
+                  "enterActive": "fadeIn fast",
+                  "enterDone": "animated fadeIn fast",
+                }
+              }
+              in={false}
+              timeout={800}
+            >
+              <Transition
+                appear={false}
+                enter={true}
+                exit={true}
+                in={false}
+                mountOnEnter={false}
+                onEnter={[Function]}
+                onEntered={[Function]}
+                onEntering={[Function]}
+                onExit={[Function]}
+                onExited={[Function]}
+                onExiting={[Function]}
+                timeout={800}
+                unmountOnExit={false}
+              >
+                <div
+                  className="lazy-image__image"
+                  onClick={[Function]}
+                  style={Object {}}
+                />
+              </Transition>
+            </CSSTransition>
+          </VisibilitySensor>
+        </div>
+      </LazyImage>
+    </withRouter(LazyImage)>
+    <withRouter(LazyImage)
+      id={2}
+      image="https://images.dog.ceo/breeds/labrador/n02099712_1229.jpg"
+      key="2"
+    >
+      <LazyImage
+        forceVisible={false}
+        history={
+          Object {
+            "action": "POP",
+            "block": [Function],
+            "createHref": [Function],
+            "go": [Function],
+            "goBack": [Function],
+            "goForward": [Function],
+            "length": 1,
+            "listen": [Function],
+            "location": Object {
+              "hash": "",
+              "pathname": "/",
+              "search": "",
+              "state": undefined,
+            },
+            "push": [Function],
+            "replace": [Function],
+          }
+        }
+        id={2}
+        image="https://images.dog.ceo/breeds/labrador/n02099712_1229.jpg"
+        location={
+          Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          }
+        }
+        match={
+          Object {
+            "isExact": true,
+            "params": Object {},
+            "path": "/",
+            "url": "/",
+          }
+        }
+      >
+        <div
+          className="lazy-image"
+        >
+          <VisibilitySensor
+            active={true}
+            containment={null}
+            delayedCall={false}
+            intervalCheck={true}
+            intervalDelay={100}
+            minTopValue={0}
+            offset={
+              Object {
+                "top": 100,
+              }
+            }
+            onChange={[Function]}
+            partialVisibility={true}
+            resizeCheck={false}
+            resizeDelay={250}
+            resizeThrottle={-1}
+            scrollCheck={false}
+            scrollDelay={250}
+            scrollThrottle={-1}
+          >
+            <CSSTransition
+              classNames={
+                Object {
+                  "enter": "animated fast",
+                  "enterActive": "fadeIn fast",
+                  "enterDone": "animated fadeIn fast",
+                }
+              }
+              in={false}
+              timeout={800}
+            >
+              <Transition
+                appear={false}
+                enter={true}
+                exit={true}
+                in={false}
+                mountOnEnter={false}
+                onEnter={[Function]}
+                onEntered={[Function]}
+                onEntering={[Function]}
+                onExit={[Function]}
+                onExited={[Function]}
+                onExiting={[Function]}
+                timeout={800}
+                unmountOnExit={false}
+              >
+                <div
+                  className="lazy-image__image"
+                  onClick={[Function]}
+                  style={Object {}}
+                />
+              </Transition>
+            </CSSTransition>
+          </VisibilitySensor>
+        </div>
+      </LazyImage>
+    </withRouter(LazyImage)>
+    <withRouter(LazyImage)
+      id={3}
+      image="https://images.dog.ceo/breeds/labrador/n02099712_1254.jpg"
+      key="3"
+    >
+      <LazyImage
+        forceVisible={false}
+        history={
+          Object {
+            "action": "POP",
+            "block": [Function],
+            "createHref": [Function],
+            "go": [Function],
+            "goBack": [Function],
+            "goForward": [Function],
+            "length": 1,
+            "listen": [Function],
+            "location": Object {
+              "hash": "",
+              "pathname": "/",
+              "search": "",
+              "state": undefined,
+            },
+            "push": [Function],
+            "replace": [Function],
+          }
+        }
+        id={3}
+        image="https://images.dog.ceo/breeds/labrador/n02099712_1254.jpg"
+        location={
+          Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          }
+        }
+        match={
+          Object {
+            "isExact": true,
+            "params": Object {},
+            "path": "/",
+            "url": "/",
+          }
+        }
+      >
+        <div
+          className="lazy-image"
+        >
+          <VisibilitySensor
+            active={true}
+            containment={null}
+            delayedCall={false}
+            intervalCheck={true}
+            intervalDelay={100}
+            minTopValue={0}
+            offset={
+              Object {
+                "top": 100,
+              }
+            }
+            onChange={[Function]}
+            partialVisibility={true}
+            resizeCheck={false}
+            resizeDelay={250}
+            resizeThrottle={-1}
+            scrollCheck={false}
+            scrollDelay={250}
+            scrollThrottle={-1}
+          >
+            <CSSTransition
+              classNames={
+                Object {
+                  "enter": "animated fast",
+                  "enterActive": "fadeIn fast",
+                  "enterDone": "animated fadeIn fast",
+                }
+              }
+              in={false}
+              timeout={800}
+            >
+              <Transition
+                appear={false}
+                enter={true}
+                exit={true}
+                in={false}
+                mountOnEnter={false}
+                onEnter={[Function]}
+                onEntered={[Function]}
+                onEntering={[Function]}
+                onExit={[Function]}
+                onExited={[Function]}
+                onExiting={[Function]}
+                timeout={800}
+                unmountOnExit={false}
+              >
+                <div
+                  className="lazy-image__image"
+                  onClick={[Function]}
+                  style={Object {}}
+                />
+              </Transition>
+            </CSSTransition>
+          </VisibilitySensor>
+        </div>
+      </LazyImage>
+    </withRouter(LazyImage)>
+    <withRouter(LazyImage)
+      id={4}
+      image="https://images.dog.ceo/breeds/labrador/n02099712_129.jpg"
+      key="4"
+    >
+      <LazyImage
+        forceVisible={false}
+        history={
+          Object {
+            "action": "POP",
+            "block": [Function],
+            "createHref": [Function],
+            "go": [Function],
+            "goBack": [Function],
+            "goForward": [Function],
+            "length": 1,
+            "listen": [Function],
+            "location": Object {
+              "hash": "",
+              "pathname": "/",
+              "search": "",
+              "state": undefined,
+            },
+            "push": [Function],
+            "replace": [Function],
+          }
+        }
+        id={4}
+        image="https://images.dog.ceo/breeds/labrador/n02099712_129.jpg"
+        location={
+          Object {
+            "hash": "",
+            "pathname": "/",
+            "search": "",
+            "state": undefined,
+          }
+        }
+        match={
+          Object {
+            "isExact": true,
+            "params": Object {},
+            "path": "/",
+            "url": "/",
+          }
+        }
+      >
+        <div
+          className="lazy-image"
+        >
+          <VisibilitySensor
+            active={true}
+            containment={null}
+            delayedCall={false}
+            intervalCheck={true}
+            intervalDelay={100}
+            minTopValue={0}
+            offset={
+              Object {
+                "top": 100,
+              }
+            }
+            onChange={[Function]}
+            partialVisibility={true}
+            resizeCheck={false}
+            resizeDelay={250}
+            resizeThrottle={-1}
+            scrollCheck={false}
+            scrollDelay={250}
+            scrollThrottle={-1}
+          >
+            <CSSTransition
+              classNames={
+                Object {
+                  "enter": "animated fast",
+                  "enterActive": "fadeIn fast",
+                  "enterDone": "animated fadeIn fast",
+                }
+              }
+              in={false}
+              timeout={800}
+            >
+              <Transition
+                appear={false}
+                enter={true}
+                exit={true}
+                in={false}
+                mountOnEnter={false}
+                onEnter={[Function]}
+                onEntered={[Function]}
+                onEntering={[Function]}
+                onExit={[Function]}
+                onExited={[Function]}
+                onExiting={[Function]}
+                timeout={800}
+                unmountOnExit={false}
+              >
+                <div
+                  className="lazy-image__image"
+                  onClick={[Function]}
+                  style={Object {}}
+                />
+              </Transition>
+            </CSSTransition>
+          </VisibilitySensor>
+        </div>
+      </LazyImage>
+    </withRouter(LazyImage)>
+  </div>
+</Grid>
+`;

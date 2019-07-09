@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Spinner from 'react-spinkit';
 import PropTypes from 'prop-types';
 import { withRouter } from 'react-router-dom';
@@ -14,6 +14,8 @@ import { setLogin } from '../../Utils/Auth';
 import './Login.scss';
 
 function Login({ history: { push } }) {
+  const [hasError, setError] = useState(false);
+
   return (
     <section className="login">
       <Formik
@@ -32,10 +34,16 @@ function Login({ history: { push } }) {
         }}
 
         onSubmit={async ({ email }) => {
-          const { user } = await signup(email);
+          setError(false);
 
-          setLogin(user.token);
-          push('/feed/husky');
+          try {
+            const { user } = await signup(email);
+
+            setLogin(user.token);
+            push('/feed/husky');
+          } catch {
+            setError(true);
+          }
         }}
       >
         {({
@@ -61,7 +69,12 @@ function Login({ history: { push } }) {
                 type="email"
                 value={values.email}
               />
+
               {errors.email && <small className="login__input-message login__input-message--error">{errors.email && touched.email && errors.email}</small>}
+
+              {hasError && (
+                <small className="login__input-message login__input-message--error login__input-message--error-fetch">Ocorreu um erro ao buscar os dados. tente novamente mais tarde.</small>
+              )}
             </div>
 
             <Button

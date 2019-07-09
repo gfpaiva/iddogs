@@ -11,11 +11,12 @@ import Zoom from '../Zoom';
 function LazyImage({
   image,
   id,
+  forceVisible,
   history: { push },
   location: { pathname },
   match: { params },
 }) {
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(forceVisible);
   const [zoom, setZoom] = useState(false);
 
   useEffect(() => {
@@ -60,9 +61,14 @@ function LazyImage({
   );
 }
 
+LazyImage.defaultProps = {
+  forceVisible: false,
+};
+
 LazyImage.propTypes = {
   image: PropTypes.string.isRequired,
   id: PropTypes.number.isRequired,
+  forceVisible: PropTypes.bool,
   history: PropTypes.shape({
     push: PropTypes.func.isRequired,
   }).isRequired,
