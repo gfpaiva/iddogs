@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Button /> should mount properly 1`] = `
+<Button
+  className=""
+  small={false}
+>
+  <button
+    className="button bg-secondary color-primary"
+  >
+    <span
+      className="button__content"
+    >
+      Test
+    </span>
+  </button>
+</Button>
+`;

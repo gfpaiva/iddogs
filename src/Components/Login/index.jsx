@@ -65,7 +65,6 @@ function Login({ history: { push } }) {
             </div>
 
             <Button
-              big
               className={`login__button my-2${isSubmitting ? ' login__button--loading' : ''}`}
               disabled={isSubmitting}
               type="submit"

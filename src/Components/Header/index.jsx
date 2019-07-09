@@ -8,23 +8,23 @@ import { IsAutenticated, logoff } from '../../Utils/Auth';
 
 import './Header.scss';
 
-function Header({ history: { push } }) {
+function Header({ autenticated, history: { push } }) {
   const logoffHandler = () => {
     logoff();
     push('/signup');
   };
 
-  const autenticated = IsAutenticated();
+  const isAutenticated = autenticated || IsAutenticated();
 
   return (
-    <header className={`header container${!autenticated ? ' header--not-logged' : ''}`}>
+    <header className={`header container${!isAutenticated ? ' header--not-logged' : ''}`}>
       <h1 className="header__title my-0">
         <Link to="/" className="header__logo">
           <strong>ID</strong>
           Dogs
         </Link>
       </h1>
-      {autenticated && (
+      {isAutenticated && (
         <Button
           small
           onClick={logoffHandler}
@@ -37,7 +37,12 @@ function Header({ history: { push } }) {
   );
 }
 
+Header.defaultProps = {
+  autenticated: false,
+};
+
 Header.propTypes = {
+  autenticated: PropTypes.bool,
   history: PropTypes.shape({
     push: PropTypes.func.isRequired,
   }).isRequired,

@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<StyledInput /> should mount properly 1`] = `
+<StyledInput
+  className=""
+  error={false}
+  filled={false}
+  id="test"
+>
+  <label
+    className="styled-input"
+    htmlFor="test"
+  >
+    <input
+      className="text-center"
+      id="test"
+      onBlur={[Function]}
+      onFocus={[Function]}
+    />
+  </label>
+</StyledInput>
+`;

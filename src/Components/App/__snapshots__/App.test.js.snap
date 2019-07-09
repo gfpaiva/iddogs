@@ -1,0 +1,39 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> should mount properly 1`] = `
+<main
+  className="app"
+>
+  <withRouter(Header) />
+  <section
+    className="app__content container"
+  >
+    <Switch>
+      <PrivateRoute
+        component={[Function]}
+        exact={true}
+        key="feed"
+        path="/feed/:category/:id?"
+      />
+      <Route
+        component={[Function]}
+        exact={true}
+        key="home"
+        path="/"
+      />
+      <Route
+        component={[Function]}
+        exact={true}
+        key="signup"
+        path="/signup"
+      />
+      <Route
+        component={[Function]}
+        exact={true}
+        key="notfound"
+      />
+    </Switch>
+  </section>
+  <Footer />
+</main>
+`;
