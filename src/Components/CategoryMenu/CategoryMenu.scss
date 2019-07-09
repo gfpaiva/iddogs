@@ -3,6 +3,7 @@
 .category-menu {
   &__list {
     @include rfs(22);
+    @media screen and (max-width: $xs-beakpoint) { @include rfs(16) }
     margin: 0;
     padding: 0;
   }
@@ -11,6 +12,7 @@
     display: inline-block;
 
     &:after {
+      @media screen and (max-width: $xs-beakpoint) { margin: 0 .75em }
       content: '/';
       font-weight: 100;
       margin: 0 1em;

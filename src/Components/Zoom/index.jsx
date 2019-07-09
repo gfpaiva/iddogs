@@ -41,7 +41,7 @@ function Zoom({
 
   return (
     <>
-      <div className="zoom">
+      <div className="zoom text-center">
         <img className="full-width animated zoomIn faster" src={image} alt={id} title={id} />
       </div>
       <div
