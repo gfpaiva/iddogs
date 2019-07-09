@@ -2,6 +2,7 @@
 
 .lazy-image {
   @include hover-shadow();
+  overflow: hidden;
 
   &__image {
     background-color: $gray;
@@ -12,6 +13,10 @@
     display: block;
     height: 33.333vh;
     opacity: 0;
+    transform: scale(1);
+    transition: transform .5s ease;
     width: 100%;
+
+    &:hover { transform: scale(1.15) }
   }
 }
