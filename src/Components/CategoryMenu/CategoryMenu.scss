@@ -1,0 +1,30 @@
+@import '../../Scss/root';
+
+.category-menu {
+  &__list {
+    @include rfs(22);
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    display: inline-block;
+
+    &:after {
+      content: '/';
+      font-weight: 100;
+      margin: 0 1em;
+    }
+
+    &:last-child:after { display: none }
+  }
+
+  &__link {
+    font-weight: 100;
+
+    &--active{
+      font-weight: 700;
+      text-decoration: underline;
+    }
+  }
+}

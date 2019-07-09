@@ -28,7 +28,7 @@ export const PublicRoutes = [
 export const PrivateRoutes = [
   {
     exact: true,
-    path: '/feed/:category',
+    path: '/feed/:category/:id?',
     component: Feed,
     key: 'feed',
   },

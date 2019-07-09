@@ -1,13 +1,17 @@
 @import '../../Scss/root';
 
 .lazy-image {
-  @include shadow();
+  @include hover-shadow();
 
   &__image {
     background-color: $gray;
     background-repeat: no-repeat;
     background-size: cover;
+    border: none;
+    cursor: pointer;
+    display: block;
     height: 33.333vh;
+    opacity: 0;
     width: 100%;
   }
 }

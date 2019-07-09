@@ -5,6 +5,7 @@ import Spinner from 'react-spinkit';
 import Grid from '../../Components/Grid';
 
 import { getFeed } from '../../Utils/API';
+import CategoryMenu from '../../Components/CategoryMenu';
 
 export default function Feed({ match: { params: { category } } }) {
   const [dogs, setDogs] = useState([]);
@@ -42,7 +43,10 @@ export default function Feed({ match: { params: { category } } }) {
 
   return (
     <div>
-      <Grid items={dogs} />
+      <CategoryMenu />
+      <Grid
+        items={dogs}
+      />
     </div>
   );
 }
