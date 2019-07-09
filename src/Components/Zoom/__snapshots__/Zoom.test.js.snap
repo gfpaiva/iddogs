@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Zoom /> should mount properly 1`] = `
+<div
+  className="zoom text-center"
+>
+  <img
+    alt={0}
+    className="full-width animated zoomIn faster"
+    src="https://images.dog.ceo/breeds/labrador/n02099712_1150.jpg"
+    title={0}
+  />
+</div>
+`;

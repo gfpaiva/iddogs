@@ -7,7 +7,7 @@
     "build:prod": "cross-env NODE_ENV=production webpack --config webpack.config.js",
     "start": "cross-env NODE_ENV=development webpack-dev-server",
     "test": "jest",
-    "test:ci": "npm test && npm run build:prod"
+    "test:coverage": "npm run test -- --coverage && cat ./coverage/lcov.info | coveralls"
   },
   "keywords": [
     "dogs"
@@ -33,6 +33,7 @@
     "babel-eslint": "^10.0.2",
     "babel-loader": "^8.0.6",
     "babel-preset-react-app": "^9.0.0",
+    "coveralls": "^3.0.4",
     "cross-env": "^5.2.0",
     "css-loader": "^3.0.0",
     "css-mqpacker": "^7.0.0",

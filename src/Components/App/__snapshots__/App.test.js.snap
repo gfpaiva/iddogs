@@ -10,6 +10,7 @@ exports[`<App /> should mount properly 1`] = `
   >
     <Switch>
       <PrivateRoute
+        checkAutenticated={[Function]}
         component={[Function]}
         exact={true}
         key="feed"

@@ -32,10 +32,10 @@ function Zoom({
   };
 
   useEffect(() => {
-    document.addEventListener('keyup', keyPressHandler);
+    window.addEventListener('keyup', keyPressHandler);
 
     return () => {
-      document.removeEventListener('keyup', keyPressHandler);
+      window.removeEventListener('keyup', keyPressHandler);
     };
   }, []);
 

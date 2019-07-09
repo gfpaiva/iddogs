@@ -13,12 +13,17 @@ export default function Feed({ match: { params: { category } } }) {
 
   useEffect(() => {
     async function fetchDogs() {
-      seLoading(true);
+      try {
+        seLoading(true);
 
-      const { list } = await getFeed(category);
+        const { list } = await getFeed(category);
 
-      setDogs(list);
-      seLoading(false);
+        setDogs(list);
+        seLoading(false);
+      } catch {
+        setDogs([]);
+        seLoading(false);
+      }
     }
 
     fetchDogs();

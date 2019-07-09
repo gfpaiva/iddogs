@@ -1,0 +1,62 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Feed /> should mount properly 1`] = `
+<Feed
+  match={
+    Object {
+      "params": Object {
+        "category": "husky",
+      },
+    }
+  }
+>
+  <div
+    className="text-center"
+  >
+    <Spinner
+      fadeIn="full"
+      name="three-bounce"
+      noFadeIn={false}
+      overrideSpinnerClassName=""
+    >
+      <div
+        className="sk-fade-in sk-spinner sk-three-bounce"
+      >
+        <div
+          key="0"
+        />
+        <div
+          key="1"
+        />
+        <div
+          key="2"
+        />
+      </div>
+    </Spinner>
+  </div>
+</Feed>
+`;
+
+exports[`<Feed /> should mount with fetch error properly 1`] = `
+<Feed
+  match={
+    Object {
+      "params": Object {
+        "category": "husky",
+      },
+    }
+  }
+>
+  <h3
+    className="text-center"
+  >
+    Não encontramos nenhum cachorro nesta categoria.
+    <span
+      aria-label="Cachorro"
+      role="img"
+    >
+      🐶
+    </span>
+  </h3>
+</Feed>
+`;

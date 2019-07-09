@@ -4,12 +4,12 @@ import PropTypes from 'prop-types';
 
 import { IsAutenticated } from '../../Utils/Auth';
 
-export default function PrivateRoute({ component: Component, ...rest }) {
+export default function PrivateRoute({ component: Component, checkAutenticated, ...rest }) {
   return (
     <Route
       {...rest}
       render={(props) => {
-        if (IsAutenticated()) return <Component {...props} />;
+        if (checkAutenticated()) return <Component {...props} />;
 
         return (
           <Redirect
@@ -24,10 +24,15 @@ export default function PrivateRoute({ component: Component, ...rest }) {
   );
 }
 
+PrivateRoute.defaultProps = {
+  checkAutenticated: IsAutenticated,
+};
+
 PrivateRoute.propTypes = {
   component: PropTypes.oneOfType([
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
     PropTypes.any,
   ]).isRequired,
+  checkAutenticated: PropTypes.func,
 };

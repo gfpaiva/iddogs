@@ -1,15 +1,15 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { MemoryRouter } from 'react-router-dom';
 
 import CategoryMenu from './index';
 
 describe('<CategoryMenu />', () => {
-  it('should mount properly', () => {
+  it('should mount with active link properly', () => {
     const wrapper = mount(
-      <Router>
+      <MemoryRouter initialEntries={[{ pathname: '/feed/husky' }]}>
         <CategoryMenu />
-      </Router>
+      </MemoryRouter>
     );
 
     expect(wrapper.find('.category-menu')).toMatchSnapshot();

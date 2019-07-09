@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Redirect } from 'react-router-dom';
 import { FaDog } from 'react-icons/fa';
 
@@ -7,8 +8,8 @@ import { IsAutenticated } from '../../Utils/Auth';
 
 import './Signup.scss';
 
-export default function Signup() {
-  if (IsAutenticated()) return <Redirect to="/feed/husky" />;
+export default function Signup({ checkAutenticated }) {
+  if (checkAutenticated()) return <Redirect to="/feed/husky" />;
 
   return (
     <div className="signup text-center">
@@ -31,3 +32,11 @@ export default function Signup() {
     </div>
   );
 }
+
+Signup.defaultProps = {
+  checkAutenticated: IsAutenticated,
+};
+
+Signup.propTypes = {
+  checkAutenticated: PropTypes.func,
+};

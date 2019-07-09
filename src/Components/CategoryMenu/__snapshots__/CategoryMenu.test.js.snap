@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<CategoryMenu /> should mount properly 1`] = `
+exports[`<CategoryMenu /> should mount with active link properly 1`] = `
 <nav
   className="category-menu text-center my-4"
 >
@@ -17,15 +17,17 @@ exports[`<CategoryMenu /> should mount properly 1`] = `
         to="/feed/husky"
       >
         <Link
-          aria-current={null}
-          className="category-menu__link"
+          aria-current="page"
+          className="category-menu__link category-menu__link--active"
+          style={Object {}}
           to="/feed/husky"
         >
           <a
-            aria-current={null}
-            className="category-menu__link"
+            aria-current="page"
+            className="category-menu__link category-menu__link--active"
             href="/feed/husky"
             onClick={[Function]}
+            style={Object {}}
           >
             Husky
           </a>

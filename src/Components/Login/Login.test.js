@@ -1,6 +1,6 @@
 import React from 'react';
-import { mount } from 'enzyme';
 import wait from 'waait';
+import { mount } from 'enzyme';
 import { BrowserRouter as Router } from 'react-router-dom';''
 
 import Login from './index';
